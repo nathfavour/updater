@@ -2,5 +2,20 @@
 name = "updater"
 version = "0.1.0"
 edition = "2021"
+description = "Modern package management CLI for Linux"
+authors = ["Your Name"]
 
 [dependencies]
+clap = { version = "4.5.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "5.0"
+anyhow = "1.0"
+thiserror = "1.0"
+semver = "1.0"
+which = "5.0"
+indicatif = "0.17"
+colored = "2.1"
+toml = "0.8"
